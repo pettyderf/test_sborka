@@ -24,4 +24,6 @@ min_arr = []
 for i in sorted(ver_arr):
     if i < ver:
         min_arr.append(i)
-print("Номера меньше введенной версии: ", min_arr)
+if len(min_arr) == 0:
+    print("Нет версий меньше введенной.")
+else: print("Номера меньше введенной версии: ", min_arr)
